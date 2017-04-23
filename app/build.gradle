@@ -28,7 +28,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.android.support:design:25.3.1'
-
     //依赖注入框架
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
@@ -43,4 +42,6 @@ dependencies {
     compile 'io.reactivex.rxjava2:rxjava:2.0.8'
     //图片缩放view
     compile 'com.github.chrisbanes:PhotoView:2.0.0'
+    //指定View显示Material Ripple 效果
+    compile 'com.balysv:material-ripple:1.0.2'
 }
