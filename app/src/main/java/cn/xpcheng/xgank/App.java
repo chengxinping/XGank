@@ -18,6 +18,7 @@ import java.util.Set;
 public class App extends Application {
     private static App instance;
     private Set<Activity> allActivities;
+    public static Context mContext;
 
     public static int SCREEN_WIDTH = -1;
     public static int SCREEN_HEIGHT = -1;
@@ -32,6 +33,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         instance = this;
+        mContext = getApplicationContext();
         getScreenSize();
     }
 

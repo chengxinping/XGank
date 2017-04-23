@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+//lambda表达式
+apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 25
@@ -16,6 +18,16 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    //lambda表达式Java8的特性
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    //解决Rxjava编译报错
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
     }
 }
 
